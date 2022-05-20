@@ -1,0 +1,971 @@
+@import "font.css";
+
+
+:root{
+    --orange: #FF5300;
+    --white1: #FFF7F4;
+    --black-bg1: #373737;
+    --black1: #18191A;
+    --black2: #242526;
+    --black-bg2:#242526;
+    --grey: #7B7B7B;
+    --white: #FFFFFF;
+    --blue: #00ACFF;
+    ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ============  common class ============== */
+.center{
+    text-align: center;
+}
+.end{
+    text-align: end;
+}
+span{
+    color: var(--orange);
+}
+.btn{
+    margin: 25px 0;
+}
+.title{
+    padding: 16px;
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 150.6%;
+    font-size: 16px;
+}
+.sub-heading{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 123.6%;
+    color: var(--black-bg1);
+    margin: 18px 0; 
+   }
+.icanwhite{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(100deg) brightness(100%) contrast(105%);
+}
+
+.icanred{
+    filter: invert(41%) sepia(75%) saturate(3977%) hue-rotate(1deg) brightness(102%) contrast(106%);
+}
+
+
+
+
+/*============================ header ===================== */
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--white);
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header div{
+    flex: 1;
+}
+.header .menulist{
+    display: none;
+}
+/* =====================================================  
+                      js    
+ ========================================================== */
+.jsmenulistn{
+    display: none;
+}
+ .jsmenulist{
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--orange);
+   
+}
+.header #jsmenulist ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+#lix{
+    position: absolute;
+    top:-18px;
+    right: 0;
+    padding: 10px 18px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header #jsmenulist ul li{
+    margin: 20px 0px;
+    list-style: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    cursor: pointer;
+
+}
+#menu{
+  cursor: pointer;
+}
+/* ========================================================== */
+    
+
+.main{
+    background-color: var( --white1);
+    padding: 50px 0;
+}
+.main-h3{
+    font-weight: 600;
+    line-height: 123.6%;
+    color: var(--black-bg1);
+}
+
+.poster{
+    padding: 50px 20px;
+}
+.main-h6{
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--grey);
+    padding: 18px;
+}
+
+
+/* =======================  about ==========================*/
+.about{
+    padding: 50px 0;
+}
+
+
+.about-h4{
+    padding: 5px 12px;
+}
+
+/* ================ card-section ======================== */
+
+.card-section{
+    background-color: var(--white);
+    padding: 20px 10px;
+}
+.card{
+    height: 200px;
+    padding: 50px 16px;
+    margin: 15px 0;
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+}
+.card img{
+    height: 70px;
+    width: 70px;
+}
+
+.card-h5{
+    font-weight: 500;
+    line-height: 123.6%;
+    color: #373737;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+
+/* ================== Our Expereince ======================= */
+
+
+.expereince-section{
+    background-color: var( --white1);
+    padding: 50px 8px;
+}
+.expereince-h6{
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--grey);
+    margin: 6px 0;
+}
+.expereince-h3{
+    font-weight: 600;
+    line-height: 123.6%;
+    color: var(--black-bg1);
+    margin: 10px 0px;
+}
+
+.Expereince-card {
+    height: 250px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 7px var(--grey);
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Expereince-card h4{
+    font-weight: 500;
+    line-height: 123.6%;
+    color: var(--grey);
+    padding-top: 18px;
+}
+
+/* ================= Team Member ====================  */
+.team-member-img{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.team-member-img-card{
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+    position: relative;
+    display: inline-block;
+    margin-left: 16px;
+}
+.team-member-img-card >img{
+    height: 250px;
+    width: 270px;
+    object-fit: fill;
+    
+   
+}
+.team-member-img-card h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 123.6%;
+    margin: 12px 0;
+}
+.team-sm-icon{
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.team-sm-icon > div{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ================== work-section ========================= */
+.work-section{
+    width: 100%;
+    padding: 50px 16px;
+}
+.work-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work-ul li{
+    list-style: none;
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 150.6%;
+    margin-bottom: 50px;
+}
+.work-img{
+    position: relative;
+    display: inline-block;
+}
+.work-img .work-img-bg{
+    height: 370px;  
+}
+.work-img-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.work-div{
+    color: var(--white);
+    position: absolute;
+    top: 188px;
+    left: 26%;
+}
+.work-div .search{
+    margin-bottom: 28px;
+}
+.work-div h3{
+    margin-bottom: 7px;
+    font-weight: 600;
+    line-height: 123.6%;
+}
+.work-div h6{
+    font-weight: 400;
+    line-height: 150.6%;
+}
+.work-gallery div{
+    margin-top: 25px;
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+  
+}
+.work-gallery div img {
+    width: 100%;
+    height: 100%;
+}
+.work-section-img >div >img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ===================== feedback-section =================== */
+
+.feedback-section{
+    width: 100%;
+    background-color: var(--white1);
+    padding: 50px 16px;
+    
+
+}
+.feedback-card-div{
+    width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    padding: 21px;
+    align-items: center;
+    position: relative;
+    
+}
+.feedback-card{
+   
+    width: 226px;
+    height: 177px;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 22px 4px 4px 30px;
+    margin: 12px;
+    position: relative;
+}
+.feedback-card2{
+    margin-left: 20px;
+}
+
+.feedback-card img{
+    position: absolute;
+    left: -10%;
+}
+.feedback-card h6{
+    font-weight: 400;
+    line-height: 150.6%;
+}
+.feedback-card p{
+    font-weight: 400;
+    line-height: 123.6%;
+}
+.slidbar{
+    display: flex;
+    justify-content: center;
+}
+.slidbar :nth-child(2){
+    margin: 0 4px;
+}
+
+/* ================== blog-section ======================= */
+.blog-section{
+    padding: 50px 16px;
+}
+.blog-card-div{
+    width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    
+}
+
+.blog-card {
+    width: 296px;
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+    padding: 15px;
+    margin:15px 0;
+}
+.blog-card2{
+   margin-left: 12px;
+
+}
+
+.blog-card >div{
+    display: flex;
+}
+.blog-card >div img{
+    margin: 0 18px;
+}
+
+.blog-card p{
+    font-weight: 400;
+    line-height: 123.6%;
+    color: var(--grey);
+}
+.blog-card h6{
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--black-bg1);
+}
+
+
+/* ================== Contact-section ====================== */
+
+.Contact-section{
+    padding: 50px 16px;
+}
+.contact-card-box{
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+    padding: 18px;
+    margin-top: 18px;
+}
+
+.contact-card h4,h5{
+    font-weight: 500;
+    line-height: 123.6%;
+    color: var(--grey);
+}
+.contact-card h3{
+    font-weight: 600;
+    line-height: 123.6%;
+    color: var(--black-bg1);
+}
+
+
+/* ======================= send Message===================== */
+
+.message-box{
+    width: 100%;
+    margin: 16px 0;
+}
+.message-img img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.message-input{
+    width: 100%;
+    height: 60px;
+    margin: 18px 0;
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+}
+.message-input input{
+    width: 100%;
+    height: 100%;
+    text-indent: 13px;
+    border:none;
+}
+.message-text{
+    width: 100%;
+    height: 163px;
+    box-shadow: 1px 1px 10px rgba(0, 1, 10, 0.1);
+}
+.message-text textarea{
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    border:none;
+    color: var(--grey);
+    font-weight: 400;
+    line-height: 150.6%;
+    margin-bottom:25px ;
+}
+
+.sendbtn{
+padding: 13px 24px;
+background-color: var(--orange);
+color: var(--white);
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 10px var(--orange);
+margin-bottom: 50px;
+}
+
+/* ================ black-section ==================== */
+.black-section{
+    background-color: var(--black1);
+    padding: 50px 16px;
+}
+.black-section h6{
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--white);
+    margin: 18px 10px 18px 0;
+}
+.black-icons-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.black-icons-box >div{
+    height: 40px;
+    width: 40px;
+    background-color: var(--white);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.black-section-company{
+    margin-bottom: 50px;
+}
+
+.black-section-company h3{
+    color:var(--white);
+    font-weight: 600;
+    line-height: 123.6%;
+    margin: 18px 0;
+}
+.black-section-company ul li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150.6%;
+    color: var(--white);
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.black-section-company h6{
+    color: var(--white);
+    font-weight: 400;
+    line-height: 150.6%;
+    
+}
+
+.E-btn{
+    width: 100%;
+    height: 60px;
+    border: 2px solid var(--orange);   
+    position: relative; 
+}
+.E-btn input{
+    width: 100%;
+    height: 100%;
+    text-indent: 18px;
+    background-color: #373737;
+    border: none;
+}
+.E-btn button{
+    padding: 15px 30.55px;
+    background-color: var(--orange);
+    position: absolute;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+/* ===================== footer ============================ */
+
+.footer{
+ background-color: var(--orange);
+ padding: 18px 40px;
+ display: flex;
+}
+.footer h6{
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--white);
+}
+
+/* ========================================================= */
+
+.main-sm-icon{
+display: none;
+}
+.team-member-img-card3{
+    display: none;
+}
+
+/* =============================================================
+                             tablet 
+==============================================================*/
+
+
+
+@media(min-width:768px){
+    /* ======================= main section================== */
+
+    .header .menulist{
+        display: block;
+    }
+    .header .menulist ul{
+        display: flex;
+        white-space: nowrap;
+        margin: 0px 4px;
+    }
+    .header div ul li{
+        margin:0 3%;
+        list-style: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150.6%;
+    }
+    .menubar{
+        display: none;
+    }
+    .mend{
+        text-align: end;
+    }
+    .main{
+        padding: 50px 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        
+    }
+    .poster{
+        padding: 0px 12px;
+    }
+    .main-h6,.main-h3{
+        padding-left: 0;
+        text-align: start;
+    }
+    .main-sm-icon{
+        display: block;
+        position: absolute;
+        top:50%;
+        transform: translatey(-50%);
+        right: 0px;
+    }
+
+/* ================== about Section ======================= */
+   
+
+  .about{
+      display: flex;
+
+  }
+  .about >div{
+      flex: 1;
+  }
+  .start{
+     text-align: start;
+  }
+
+  /* =================== card-section ======================= */
+  .card-section{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .card{
+      margin: 24px;
+      padding: 18px;
+
+  }
+  .card img{
+    height: 50px;
+    width: 50px;
+}
+
+/* ================== expereince-section ================== */
+
+.expereince-section{
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+.expereince-section >div{
+    flex: 1;
+}
+
+.Expereince-card-secation{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.expereince-section >div{
+    flex: 1;
+}
+.Expereince-card{
+    height: 150px;
+    width: 160px;
+   
+}
+.Expereince-card-secation >div{
+    display: flex;
+}
+.Expereince-card-down{
+    margin-top: 50px;
+    /* margin-left: 6px; */
+}
+
+/* ===================== Team Member ======================== */
+.team-member{
+    padding: 100px 40px;
+}
+.team-member-img-card3{
+    display: block;
+}
+.team-member-img-card >img{
+    width: 213px;
+    height: 230px;
+}
+
+.work-section-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-section-img >div{
+    margin-bottom: 5px;
+    width: 213px;
+    height: 230px;
+}
+.work-section-img >div > img{
+    width:100%;
+}
+.work-img-bg{
+    margin-bottom: 5px;
+    width: 213px;
+    height: 230px; 
+    position: relative;
+}
+.work-img-bg >img{
+    width:100%;
+    object-fit: fill;
+   
+}
+.work-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.work-div img{
+    width: 33px;
+    height: 33px;
+}
+.work-div h3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 123.6%;
+}
+.work-div h6{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%; 
+}
+/* ===================== our work ======================= */
+.work-img .work-img-bg{
+    height: 224px;
+}
+
+
+/* =================== Clients Feedback =================== */
+
+.feedback-card-div{
+    width: 100%;
+    justify-content: center;
+ 
+    
+    
+}
+/* ====================== Our Blog ========================= */
+
+.blog-card-div{
+    width: 100%;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+/* ================ Contact-section===================== */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card-box{
+    width: 213px;
+}
+.contact-card-box img{
+    width: 40px;
+    height: 40px;
+}
+.contact-card h4{
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 123.6%;
+}
+.contact-card h3{
+    font-size: 25px;
+    font-weight: 500px;
+    line-height: 123.6%;
+
+}
+.contact-card-box h5{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150.6%;
+}
+.contact-card-box{
+    padding: 12px;
+    margin: 0 5px;
+}
+/* ====================== Massege box ======================= */
+.message-box{
+display: flex;
+align-items: center;
+}
+.message-box >div{
+    flex: 1;
+}
+.massage-input{
+    display: flex;
+    justify-content: space-between;
+}
+.massage-input>div{
+    flex: 1;
+    margin-left: 5px;
+}
+.message-text{
+    height: 109px;
+    margin: 20px;
+    margin-left: 5px;
+} 
+/* ============================ black ==================== */
+.black-section  {
+display: flex;
+justify-content: space-evenly;
+}
+.black-section >div{
+    flex: 1;
+}
+/* ======================== footer ========================== */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+/* =============================================================
+                       laptop
+==============================================================*/
+
+@media(min-width:1144px){
+
+    /* ========================  header-section ======================== */
+    .header{
+        padding: 0 100px ;
+    }
+
+    /* ======================  main-section ============================ */
+    .main{
+        padding: 100px 100px ;
+
+    }
+    /* =======================  about-section ============================ */
+    .about{
+        padding: 100px 100px 50px 100px ;
+    }
+    /* ====================== card-section ============================= */
+    .card-section{
+        padding: 0 100px 100px 100px;
+    }
+    .card-section .card{
+        padding: 20px;
+    }
+    .card-section:nth-child(even){
+        margin: 0 10px;
+    }
+    .card h5{
+      font-weight: 400px;
+      font-size: 16px;
+      line-height: 150.6%;
+    }
+
+    /* ============== expereince-section =================== */
+
+    .expereince-section{
+        padding: 50px 100px;
+    }
+    
+    .Expereince-card-secation >div{
+        flex: 1;
+    }
+    .Expereince-card{
+        height: 230px;
+        width: 250px;
+    }
+    .Expereince-card h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 123.6%;
+    }
+
+    /* ===========================  Team Member ========================= */
+    .team-member{
+        padding: 50px 100px;
+    }
+
+    /* ===============================  Our Work ======================= */
+    .work-section{
+        padding: 50px 100px;
+    }
+
+    /* =============================  feedback-section ================ */
+    .feedback-section{
+        padding: 25px 100px;
+    }
+    .feedback-card-div{
+        width: 100%;
+    }
+    .feedback-card{
+        height: 250px;
+        width: 350px;
+        margin-right:50px ;
+    }
+
+    /* =================== blog-section =============================== */
+    .blog-section{
+        padding: 70px 100px;
+    }
+    .blog-card{
+        width: 500px;
+    }
+
+    /* ====================== Contact-section ======================== */
+    .Contact-section{
+        padding: 50px 100px;
+    }
+    .contact-card-box{
+        width: 350px;
+        margin: 5px;
+        border-radius: 0px 1px 10px rgba(0, 0, 0,0.1);
+    }
+    /* =========================  Massege box ======================== */
+    .message-box{
+        padding: 10px 50px;
+    }
+    .black-section{
+    padding: 50px 100px;
+    }
+
+}
